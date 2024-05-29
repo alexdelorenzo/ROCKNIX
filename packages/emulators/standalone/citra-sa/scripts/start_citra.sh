@@ -53,23 +53,23 @@ ln -sf /storage/roms/3ds/citrasa/nand /storage/.config/citra-emu/nand
         fi
         if [ "$CPU" = "1" ]
         then
-                sed -i '/cpu_clock_percentage =/c\cpu_clock_percentage = 90' /storage/.config/citra-emu/sdl2-config.ini
+                sed -i '/cpu_clock_percentage =/c\cpu_clock_percentage = 150' /storage/.config/citra-emu/sdl2-config.ini
         fi
 	if [ "$CPU" = "2" ]
         then
-                sed -i '/cpu_clock_percentage =/c\cpu_clock_percentage = 80' /storage/.config/citra-emu/sdl2-config.ini
+                sed -i '/cpu_clock_percentage =/c\cpu_clock_percentage = 200' /storage/.config/citra-emu/sdl2-config.ini
         fi
         if [ "$CPU" = "3" ]
         then
-                sed -i '/cpu_clock_percentage =/c\cpu_clock_percentage = 70' /storage/.config/citra-emu/sdl2-config.ini
+                sed -i '/cpu_clock_percentage =/c\cpu_clock_percentage = 250' /storage/.config/citra-emu/sdl2-config.ini
         fi
         if [ "$CPU" = "4" ]
         then
-                sed -i '/cpu_clock_percentage =/c\cpu_clock_percentage = 60' /storage/.config/citra-emu/sdl2-config.ini
+                sed -i '/cpu_clock_percentage =/c\cpu_clock_percentage = 300' /storage/.config/citra-emu/sdl2-config.ini
         fi
         if [ "$CPU" = "5" ]
         then
-                sed -i '/cpu_clock_percentage =/c\cpu_clock_percentage = 50' /storage/.config/citra-emu/sdl2-config.ini
+                sed -i '/cpu_clock_percentage =/c\cpu_clock_percentage = 350' /storage/.config/citra-emu/sdl2-config.ini
         fi
 
    #Resolution Scale
