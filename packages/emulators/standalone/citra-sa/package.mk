@@ -13,7 +13,7 @@ PKG_PATCH_DIRS+="${DEVICE}"
 case ${DEVICE} in
   S922X)
     PKG_URL="${PKG_SITE}.git"
-    PKG_VERSION="64e3e9ffaaf13c6f08901225b6e3312f6b18b217"
+    PKG_VERSION="e15d4c0d4ae963c721f34fe128713b5176af9a37"
   ;;
   *)
     PKG_URL="${PKG_SITE}.git"
