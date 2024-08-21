@@ -3,7 +3,7 @@
 # Copyright (C) 2023 JELOS (https://github.com/JustEnoughLinuxOS)
 
 PKG_NAME="vlc"
-PKG_VERSION="3.0.20"
+PKG_VERSION="3.0.21"
 PKG_LICENSE="GPL"
 PKG_SITE="http://www.videolan.org"
 PKG_URL="https://mirror.netcologne.de/videolan.org/${PKG_NAME}/${PKG_VERSION}/$PKG_NAME-${PKG_VERSION}.tar.xz"
@@ -11,6 +11,8 @@ PKG_DEPENDS_TARGET="toolchain libdvbpsi gnutls ffmpeg libmpeg2 zlib flac libvorb
 PKG_LONGDESC="VideoLAN multimedia player and streamer"
 
 pre_configure_target() {
+  export CFLAGS="${CFLAGS} -Wno-error=incompatible-pointer-types"
+  export CXXLFAGS="${CXXFLAGS} -Wno-error=incompatible-pointer-types"
 
   ENABLED_FEATURES="--enable-silent-rules \
             --enable-run-as-root \

@@ -1,7 +1,6 @@
-# SPDX-License-Identifier: GPL-2.0-or-later
-# Copyright (C) 2009-2016 Stephan Raue (stephan@openelec.tv)
-# Copyright (C) 2017-present Team LibreELEC (https://libreelec.tv)
-# Copyright (C) 2023 JELOS (https://github.com/JustEnoughLinuxOS)
+# SPDX-License-Identifier: GPL-2.0
+# Copyright (C) 2022-24 JELOS (https://github.com/JustEnoughLinuxOS)
+# Copyright (C) 2024-present ROCKNIX (https://github.com/ROCKNIX)
 
 PKG_NAME="u-boot"
 PKG_ARCH="arm aarch64"
@@ -19,13 +18,12 @@ case ${DEVICE} in
     PKG_URL="${PKG_SITE}/rk3588-uboot/archive/${PKG_VERSION}.tar.gz"
     ;;
   RK3566*)
-    PKG_URL="https://github.com/u-boot/u-boot.git"
-    PKG_VERSION="9cba29b19f43f9450117e8bc89e7dda691ed5ab5"
-    PKG_GIT_CLONE_BRANCH="master"
+    PKG_VERSION="v2024.07"
+    PKG_URL="https://github.com/u-boot/u-boot/archive/${PKG_VERSION}.tar.gz"
     ;;
   RK3399)
     PKG_DEPENDS_TARGET+=" atf openssl:host"
-    PKG_VERSION="2024.04"
+    PKG_VERSION="2024.07"
     PKG_URL="https://ftp.denx.de/pub/u-boot/${PKG_NAME}-${PKG_VERSION}.tar.bz2"
     ;;
   RK3326)
